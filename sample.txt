@@ -1,0 +1,6 @@
+This is for git demo
+
+1. github account creation
+2. github public repo with readme 
+3. clone in local sys
+4. sample.txt push to GH
