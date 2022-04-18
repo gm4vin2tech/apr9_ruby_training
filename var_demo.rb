@@ -9,3 +9,4 @@ puts "a is #{a} and its class is #{a.class}"
 puts "b is #{b} and its class is #{b.class}"
 puts "c is #{c} and its class is #{c.class}"
 
+#ruby var_demo.rb
