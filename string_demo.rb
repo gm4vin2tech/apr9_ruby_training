@@ -58,21 +58,52 @@ s5.freeze #immutable
 # s5[4] = 'gg' #error for frozen string
 puts s5
 
+#string methods
+puts "good " * 3 #string repetition
+puts "good " + "Morning" #string concatenation
+puts "good " << "day"  #string concatenation
+puts "123" <=> "123"   #string comparision , retuns 0
+puts "123" <=> "12"    # string comparision , retuns 1
+puts "123" <=> "1234"  #string comparision , retuns -1
+puts "gowthami".capitalize #modifies first character as capital
+puts "as" == "as" #comparision retuns true
+puts "as1" == "a" #comparision returns false
+puts "some".casecmp("Some") #comparision retuns 0
+puts "gowthami".center(33) #centers the string
+puts "gowthami\n\n".chomp #removes last seperator
+puts "gowthami".chop #removes last character
+puts "gowthami\n".chop #removes last character
+puts "good ".concat("morning") #concatenation
+puts "sfsv\n".count('s') #counts occurence of characters
+puts "sfsv\n".delete('s') #deletes character(s)
+puts "sfsv\n".delete('sv')
+puts "STR".downcase #converts to lower case
+puts "sfdf".upcase #converts to upcase
+puts "DDas".swapcase #converts to other(lower<->upper) case
+puts s5.frozen? #to check string object is freezed or not
+puts "".empty? #true if empty
+puts "dff".include? 'df' #checks the given string is included in actual string
+puts "good morning".index('0') #returns first index of occurance of given string
+puts "good".insert(1,'gowthami') #inserts given string at specified index
+puts "good".replace("value") #replaces the given string
+puts "good".reverse #reverses the string
+puts "something needs to acheive".split('/') #splits and returns an array
+puts "some".size #length of string
+puts "some".length #length of string
 
+a = "something"
+a.slice!(2)
+puts a #deletes the 2nd index value
 
+"something".each_char do |c|
+    puts c
+end
 
+"something".each_byte do |c|
+    puts c
+end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+"something".each_line do |c|
+    puts c
+end
 
