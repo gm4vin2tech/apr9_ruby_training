@@ -30,7 +30,8 @@ array.select { |item| item > 2 }     #[3]
 array.reject { |item| item % 3 == 0 } #[1,2]
 
 # Count
-array.count #3
+array.count #3 #total_length
+array.count(3) #occurances of 3 count
 
 # count can also be passed a block:
 array.count { |item| item % 3 == 0 } #1
