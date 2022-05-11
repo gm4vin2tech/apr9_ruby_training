@@ -35,5 +35,5 @@ end
 # ob2 = HumanRole.new
 # ob3 = HumanRole.new
 
-# HumanRole.method_name #class method
+HumanRole.method_name #class method
 HumanRole.new.method_name1 #instance method
