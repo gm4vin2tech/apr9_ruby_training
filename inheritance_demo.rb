@@ -66,5 +66,9 @@ class B < A
 	end
 end
 
-# A.new.a(3,6)
+A.new.a
+A.new.a(12)
+A.new.a(12,15)
+A.new.a(arg2=45) #it will take only order of arguments, so its a pass by value and no pass by reference...so arg1=45 and arg2=30(a default value from method definition) here
+A.new.a(arg2=45, arg1=39) #it will take only order of arguments, so its a pass by value and no pass by reference...so arg1=45 and arg2=39(if not provide, takes a default value) here
 B.new.a(23,56)
